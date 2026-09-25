@@ -1,30 +1,17 @@
-@import url('./fonts/Noto/NotoSans/NotoSans.css');
-@import url('./fonts/Noto/NotoSansDisplay/NotoSansDisplay.css');
-@import url('./fonts/Noto/NotoSansMono/NotoSansMono.css');
-@import url('./fonts/Noto/NotoSerif/NotoSerif.css');
-@import url('./fonts/Noto/NotoSansArabic/NotoSansArabic.css');
-@import url('./fonts/Noto/NotoKufiArabic/NotoKufiArabic.css');
-@import url('./fonts/Noto/NotoNaskhArabic/NotoNaskhArabic.css');
-@import url('./fonts/Noto/NotoSansMath/NotoSansMath.css');
-@import url('./fonts/Noto/NotoSansSymbols/NotoSansSymbols.css');
-@import url('./fonts/Noto/NotoSansSymbols2/NotoSansSymbols2.css');
-@import url('./fonts/Noto/NotoColorEmoji/NotoColorEmoji.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Naskh+Arabic:wght@400..700&family=Noto+Sans+Arabic:wght@100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   /* 1. [Clear basic text] User interfaces, applications, web paragraphs, and general reading. */
-  --font-body: 'Noto Sans', 'Noto Sans Arabic', 'Noto Sans Math', 'Noto Sans Symbols', 'Noto Sans Symbols 2', 'Noto Color Emoji', sans-serif;
+  --font-body: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
 
   /* 2. [Headings] Large headlines H1, H2, banners, and widescreen displays. */
-  --font-display: 'Noto Sans Display', 'Noto Kufi Arabic', 'Noto Sans Math', 'Noto Sans Symbols', 'Noto Sans Symbols 2', 'Noto Color Emoji', sans-serif;
+  --font-display: 'Noto Sans Display', 'Noto Kufi Arabic', sans-serif;
 
   /* 3. [Fixed-width] fonts for lines of code, code editor, and numeric tables. */
-  --font-code: 'Noto Sans Mono', 'Noto Sans Arabic', 'Noto Sans Math', 'Noto Sans Symbols', 'Noto Sans Symbols 2', 'Noto Color Emoji', monospace;
+  --font-code: 'Noto Sans Mono', 'Noto Sans Arabic', monospace;
 
   /* 4. [Classic Formal] Classic paragraphs, quotes, printed articles, books, official and luxury IDs. */
-  --font-serif: 'Noto Serif', 'Noto Naskh Arabic', 'Noto Sans Math', 'Noto Sans Symbols', 'Noto Sans Symbols 2', 'Noto Color Emoji', serif;
-
-  /* 5. [Symbols] General symbols. */
-  --font-symbols: 'Noto Sans Math', 'Noto Sans Symbols', 'Noto Sans Symbols 2', 'Noto Color Emoji', 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+  --font-serif: 'Noto Serif', 'Noto Naskh Arabic', serif;
 }
 
 #rtl-content {
@@ -102,12 +89,6 @@
   padding-right: 20px;
 }
 
-
-#rtl-content .general-symbols,
-#rtl-content .general-symbols * {
-  font-family: var(--font-symbols);
-}
-
 @media print {
   /* Convert all texts and articles to a classic Serif font suitable for paper. */
   #rtl-content * {
@@ -120,11 +101,5 @@
   #rtl-content code, #rtl-content pre, #rtl-content .terminal, #rtl-content .json-data,
   #rtl-content code *, #rtl-content pre *, #rtl-content .terminal *, #rtl-content .json-data * {
     font-family: var(--font-code) !important;
-  }
-
-  /* Keep general symbols font even during printing */
-  #rtl-content .general-symbols,
-  #rtl-content .general-symbols * {
-    font-family: var(--font-symbols) !important;
   }
 }

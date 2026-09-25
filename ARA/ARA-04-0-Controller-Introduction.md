@@ -1,6 +1,6 @@
 <div id="rtl-content" lang="ar">
 <style>
-  @import url('./ARA/style/style.css');
+  @import url('./ARA/style.css');
 </style>
 
 ##### لغات أخرى: [简体中文](/CHN/CHN-04-控制器-简介) - [English](/ENG/ENG-04-0-Controller-Introduction)

@@ -1,6 +1,6 @@
 <div id="rtl-content" lang="ar">
 <style>
-  @import url('./ARA/style/style.css');
+  @import url('./ARA/style.css');
 </style>
 
 ##### لغات أخرى: [简体中文](/CHN/CHN-16-Brotli压缩) - [English](/ENG/ENG-16-Brotli)
